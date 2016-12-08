@@ -1,6 +1,6 @@
 html, body{
 	/*--font-family: 'Roboto', sans-serif;--*/
-	font-family: 'Oswald', sans-serif;
+	font-family: sans-serif;
 	font-size: 100%;
 	background: #ffffff;
 }
@@ -23,11 +23,11 @@ input[type="button"],input[type="submit"],li.parallelogram{
 }
 h1,h2,h3,h4,h5,h6{
 	margin:0;
-	font-family: 'Oswald', sans-serif;
+	font-family:sans-serif;
 }	
 p{
 	margin:0;
-	font-family: 'Lora', serif;
+	font-family: sans-serif;
 }
 ul{
 	margin:0;
@@ -172,7 +172,7 @@ min-height: 730px;
 }
 .about a {
     text-decoration: none;
-    padding: 6px 30px;
+    padding: 6px 6px;
     font-size: 16px;
 }
 /* Shutter In Horizontal */
@@ -225,7 +225,7 @@ a.hvr-shutter-in-horizontal:hover:before,a.hvr-shutter-in-horizontal:focus:befor
     margin: 5em 0;
     text-align: center;
 }
-span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.glyphicon.glyphicon-phone, span.glyphicon.glyphicon-edit {
+span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.glyphicon.glyphicon-phone,span.glyphicon.glyphicon-edit{
     font-size: 2em;
     background:#2b90d9;
     padding: 0.8em;
@@ -267,7 +267,7 @@ span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.
     margin: 2em 0 0;
 	text-align: center;
 }
-span.glyphicon.glyphicon-thumbs-up,span.glyphicon.glyphicon-heart,span.glyphicon.glyphicon-star,span.glyphicon.glyphicon-cd {
+span.glyphicon.glyphicon-thumbs-up,span.glyphicon.glyphicon-heart,span.glyphicon.glyphicon-star,span.glyphicon-map-marker{
     color: #fff;
     font-size: 3em;
     vertical-align: middle;
@@ -314,6 +314,9 @@ span.glyphicon.glyphicon-thumbs-up,span.glyphicon.glyphicon-heart,span.glyphicon
 }
 /*--three-steps--*/
 
+.pricing{
+  background-color: #282c37
+}
 div.pricing-circle{
     border-radius: 50%;
     height: 120px;
@@ -328,6 +331,9 @@ div.pricing-circle{
 span.glyphicon.glyphicon-credit-card, span.glyphicon.glyphicon-home, span.glyphicon.glyphicon-usd, span.glyphicon.glyphicon-flash{
   line-height: 120px;
   font-size: 2em;
+}
+ul.list-group.list-group-flush{
+  text-align: center;
 }
 /*--work--*/
 .work {
@@ -399,59 +405,6 @@ span.glyphicon.glyphicon-credit-card, span.glyphicon.glyphicon-home, span.glyphi
     font-size: 16px;
 }
 /*--ser-banner--*/
-/*--team--*/
-.team{
-	padding:5em 0;
-	text-align:center;
-}
-.team-grids {
-  position: relative;
-}
-.team-info {
-  margin-top: 3em;
-}
-.team-grids a {
-	overflow: hidden;
-	position: relative;
-	display: block;
-}
-.captn h4 {
-  color: #fff;
-  margin: .1em 0 0;
-  font-size: 1.5em;
-}
-.captn p {
-    color: #fff;
-    font-size: 0.95em;
-    font-weight: 100;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-.team-grids a .captn {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  font-weight: 800;
-  color: #ffffff;
-  position: absolute;
-  bottom: -84%;
-  right: 0%;
-  background-color:rgba(213, 125, 57, 0.78);
-  padding: 2% 10%;
-  text-align: center;
-  -o-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.team-grids a:hover .captn {
-  width: 100%;
-  bottom: 0%;
-  padding: 40% 10%;
-    right: 0%;
-}
-/*--team--*/
 .testimonials {
     background: url(../images/tes-banner.jpg) no-repeat 0px 0px;
     background-size: cover;
@@ -487,7 +440,7 @@ span.glyphicon.glyphicon-credit-card, span.glyphicon.glyphicon-home, span.glyphi
 }
 /*--news--*/
 .news {
-    background: url(../images/mid-banner.jpg) no-repeat 0px 0px;
+    background: url(../images/signwords.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -497,43 +450,11 @@ span.glyphicon.glyphicon-credit-card, span.glyphicon.glyphicon-home, span.glyphi
 	padding:5em 0;
 }
 .news h3 {
-    font-size: 1.7em;
-    color: #fff;
+  font-size: 2em;
+  color: #fff;
 }
-.news p {
-    font-size: 15px;
-    color: #fff;
-    margin: 2em 0 0;
-    line-height: 1.8em;
-}
-.news-right input[type="text"] {
-    width: 74%;
-    color: #fff;
-    background: none;
-    padding: 10px 10px;
-    outline: none;
-    border: 1px solid #fff;
-    font-size: 13px;
-}
-.news-right form input[type=submit] {
-    color: #fff;
-    padding: 9px 30px;
-    font-size: 15px;
-    cursor: pointer;
-    border: 1px double #fff;
-    margin: 15px 0 0 0px;
-    outline: none;
-    background: none;
-}
-.news-right form input[type=submit]:hover {
-    background:#2b90d9;
-     border: 1px double #2b90d9;
-    color: #fff;
-    transition: 0.5s all ease;
-    -webkit-transition: 0.5s all ease;
-    -moz-transition: 0.5s all ease;
-    -o-transition: 0.5s all ease;
-    -ms-transition: 0.5s all ease;
+.news label{
+  min-height: 50px;
 }
 /*--news--*/
 .fa {
@@ -550,46 +471,42 @@ ul.social-icons1 li {
 }
 /*--news-1--*/
 .news-1 {
-    padding: 5em 0;
+    padding: 3em 0;
     text-align: center;
 }
 .im-left {
+    padding-left: 2.5em;
     float: left;
     width: 40%;
 }
 .tex-right {
     float: left;
     width: 60%;
-    background:#D57D39;
+    background:#2b90d9;
     text-align: left;
-    padding: 4em 2em;
+    padding: 1em 1em 1.5em 1em;
 }
 .news-1 h4 {
+    text-align: center;
+    margin-bottom: 1em;
     color: #fff;
     font-size: 1.2em;
 }
 .news-1 h4 a{
     color: #fff;
 }
-.news-1 h4 a:hover{
-    color:#2b90d9;
-}
-.news-1 h6 {
-    color: #fff;
-    font-size: 1em;
-    margin: 1em 0 0;
-}
 .news-1-bottom p {
     color: #fff;
-    margin: 1em 0;
+    margin: 0.5em 0;
 }
 .news-1 ul {
-    margin-top: 1em;
+  text-align: right;
+  margin-top: 2em;
 }
 .news-1 ul li {
-    color: #fff;
-    font-size: 0.875em; 
-	font-family: 'Lora', serif;
+  color: #fff;
+  font-size: 0.875em; 
+	font-family: sans-serif;
 }
 .news-1 ul li {
     display: block;
@@ -600,7 +517,7 @@ i.glyphicon.glyphicon-calendar {
     padding-right: 0.5em;
 }
 .news-1-bottom {
-    margin-top: 5em;
+    margin-top: 3em;
 }
 /*--news-1--*/
 /*--contact--*/
@@ -609,7 +526,7 @@ i.glyphicon.glyphicon-calendar {
     text-align: center;
 }
 .contact-right span{
-	color:#D57D39;
+	color:#2b90d9;
 	font-size:2.2em;
 	display:inline-block;
 	vertical-align:middle;
@@ -620,12 +537,6 @@ i.glyphicon.glyphicon-calendar {
     font-size: 15px;
     color: #81868e;
     margin: 0 0 0 10px;
-}
-.contact-right p a{
-	color:#81868e;
-}
-.contact-right p a:hover{
-	color:#b3a020;
 }
 .contact-left input[type="text"] {
     width: 49.38%;
@@ -638,6 +549,13 @@ i.glyphicon.glyphicon-calendar {
 }
 .contact-left input[type="text"]:nth-child(1) {
     margin-right: 0px;
+}
+.contact-bottom button{
+  color: #fff;
+  background-color: #2b90d9;
+}
+.contact-bottom span{
+  display: block;
 }
 .contact-left textarea {
     width: 100%;
@@ -681,11 +599,11 @@ i.glyphicon.glyphicon-calendar {
     margin-top: 5em;
 }
 .contact-right {
-    padding: 0 5em;
+    padding: 0em;
 }
 /*--contact--*/
 .footer {
-    background:#2b90d9;
+    background: linear-gradient(to bottom right, #2b90d9, blue);
     padding: 1em 0;
     text-align: center;
 }
@@ -694,10 +612,18 @@ i.glyphicon.glyphicon-calendar {
     font-size: 1em;
 }
 .footer p a{
+
     color: #fff;
 }
 .footer p a:hover{
-    color: #44221F;
+    color: #000;
+}
+.companion h3{
+  text-align: center;
+}
+.companion img{
+  display: block;
+  margin: 0 auto;
 }
 /* FIFTH EFFECTS */
 .fifth-effect img {
@@ -844,7 +770,7 @@ i.glyphicon.glyphicon-calendar {
     padding: 0 2em;
 }
 .tex-right {
-    padding: 2.35em 1em;
+    padding: 1em 1em;
 }
 .about p, .three-steps p, .work p, .services p, .team p, .contact p, .news-1 p {
     margin: 1em 0;
@@ -1018,13 +944,13 @@ span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.
 }
 .tex-right {
     width: 69%;
-    padding: 4.95em 2em;
+    padding: 4em 2em;
 }
 .im-left {
     width: 31%;
 }
 .news-1-left {
-    margin-bottom: 2em;
+    /*margin-bottom: 2em;*/
 }
 .contact {
     padding: 3em 0;
@@ -1062,7 +988,7 @@ span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.
     height: 150px;
 }
 .about p, .three-steps p, .work p, .services p, .team p, .contact p, .news-1 p {
-    font-size: 13px;
+    font-size: 12px;
 }
 .services h4 {
     font-size: 1.1em;
@@ -1138,7 +1064,7 @@ span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.
     width: 100%;
 }
 .tex-right {
-    padding: 4.54em 2em;
+    padding: 2em 1.5em;
 }
 .banner {
     min-height: 450px;
