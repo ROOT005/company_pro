@@ -45,7 +45,7 @@ label{
 }
 .navbar-default {
   border: none;
-  background-color: rgba(248, 248, 248, 0);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .navbar-collapse {
   padding-right: 0;
@@ -131,24 +131,28 @@ background-size:cover;
 min-height: 730px;
 }
 .banner-info {
-   margin: 9em 0 0;
-    float: right;
-    width: 32%;
-    text-align: right;
+  margin: 12em 0 0;
+  float: right;
+  width: 32%;
+  text-align: right;
 }
 .banner-info h1 {
-    font-size: 4em;
-    color:#2b90d9;
-    margin: 0;
+  font-size: 4em;
+  color:#2b90d9;
+  margin: 0;
 }
 .banner-info h1 a{
-    color: #2b90d9;
+  color: #2b90d9;
 }
 .banner-info p {
-    font-size: 1.5em;
-    color: #fff;
-    margin: 0.5em 0;
-    line-height: 1.2em;
+  font-size: 1.5em;
+  color: #fff;
+  margin: 0.5em 0;
+  line-height: 1.2em;
+}
+p.eng{
+  font-size: 1em;
+  text-decoration: underline;
 }
 /*--about--*/
 .about {
@@ -158,6 +162,9 @@ min-height: 730px;
     font-size: 2em;
     color: #2b90d9;
     margin: 0;
+}
+.about h3{
+  text-align: center;
 }
 .about h4,.three-steps h4,.work h4{
     font-size: 1.3em;
@@ -242,6 +249,10 @@ span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.
 .ui-1 p {
     margin: 1em 0;
 }
+.ui-1 h4{
+  text-align: right;
+  margin-top: 2.5em;
+}
 /*--about--*/
 /*--mid-bann--*/
 .mid-bann{
@@ -267,7 +278,8 @@ span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.
     margin: 2em 0 0;
 	text-align: center;
 }
-span.glyphicon.glyphicon-thumbs-up,span.glyphicon.glyphicon-heart,span.glyphicon.glyphicon-star,span.glyphicon-map-marker{
+span.glyphicon.glyphicon-thumbs-up,span.glyphicon.glyphicon-heart,
+span.glyphicon.glyphicon-star,span.glyphicon-map-marker,span.glyphicon-shopping-cart{
     color: #fff;
     font-size: 3em;
     vertical-align: middle;
@@ -313,11 +325,46 @@ span.glyphicon.glyphicon-thumbs-up,span.glyphicon.glyphicon-heart,span.glyphicon
     color: #fff;
 }
 /*--three-steps--*/
+/*--service*/
 
-.pricing{
+.service{
   background-color: #282c37
 }
-div.pricing-circle{
+.service.panel{
+  border-width: 0px;!importent
+}
+.service h3{
+  margin-top: 1em;
+  color: #2b90d9;
+}
+.bg1{
+  border: none;
+  background-color: #125488;!importent
+}
+.bg2{
+  background-color: #2b90d9;!importent
+}
+.bg3{
+  background-color: #3dd9d6;!importent
+}
+a.bg3{
+  color: #fff;!importent;
+}
+a.bg3:hover{
+  color: #fff;
+  background-color: #125488;
+}
+.bg4{
+  background-color: #ccb76c;!importent
+}
+a.bg4{
+  color: #fff;
+}
+a.bg4:hover{
+  color:#fff;
+  background-color: #FFEC8B;
+}
+div.service-circle{
     border-radius: 50%;
     height: 120px;
     width: 120px;
@@ -335,6 +382,7 @@ span.glyphicon.glyphicon-credit-card, span.glyphicon.glyphicon-home, span.glyphi
 ul.list-group.list-group-flush{
   text-align: center;
 }
+/*service_end*?
 /*--work--*/
 .work {
     padding: 5em 0 0;
@@ -539,13 +587,12 @@ i.glyphicon.glyphicon-calendar {
     margin: 0 0 0 10px;
 }
 .contact-left input[type="text"] {
-    width: 49.38%;
+    width: 60%;
     margin: 0px;
     color: #999;
     background: none;
-    padding: 15px 10px;
     outline: none;
-    border: 1px solid #BEBEBE;
+    border: 1px solid #ccc;
 }
 .contact-left input[type="text"]:nth-child(1) {
     margin-right: 0px;
@@ -557,39 +604,20 @@ i.glyphicon.glyphicon-calendar {
 .contact-bottom span{
   display: block;
 }
-.contact-left textarea {
-    width: 100%;
-    color: #999;
-    resize: none;
-    background: none;
-    height: 12.7em;
-    padding: 15px;
-    outline: none;
-    border: 1px solid #BEBEBE;
-    margin-top: 1.4%;
+.contact-bottom span.glyphicon.glyphicon-shopping-cart{
+  display: block;
+  width: 1em;
+  color: #2b90d9;
+  text-align: left;
+  margin-left: 2.5em;
+  margin-bottom: 0.5em;
 }
-.submit-btn input[type=submit] {
-    color:#fff;
-    padding: 7px 41px;
-    font-size: 18px;
-    cursor: pointer;
-    font-weight: 400;
-    margin: 20px 0 0 0px;
-    border:none;
-    background:#2b90d9;
-    outline: none;
+.contact-left h4{
+  text-align: center;
+  margin-top: 1em;
 }
-.submit-btn {
-    text-align:left;
-}
-.submit-btn input[type=submit]:hover {
-    background: #D57D39;
-    color: #fff;
-    transition: 0.5s all ease;
-    -webkit-transition: 0.5s all ease;
-    -moz-transition: 0.5s all ease;
-    -o-transition: 0.5s all ease;
-    -ms-transition: 0.5s all ease;
+.contact-left h4{
+  display: block;
 }
 .contact-top {
     text-align: left;
@@ -1371,6 +1399,7 @@ span.glyphicon.glyphicon-heart, span.glyphicon.glyphicon-star, span.glyphicon.gl
 .ui-1-top {
     padding: 1.2em 0;
 }
+
 span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.glyphicon.glyphicon-phone, span.glyphicon.glyphicon-edit {
     font-size: 1.3em;
 }
