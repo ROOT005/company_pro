@@ -29,8 +29,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--<link href='//fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 -->
-<link href="/static/css/style.css" rel='stylesheet' type='text/css' />	
-<script src="/static/js/jquery-1.11.1.min.js"></script>
+<script src="/static/js/jquery.min.js"></script>
 <script src="/static/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/static/js/move-top.js"></script>
 <script type="text/javascript" src="/static/js/easing.js"></script>
@@ -38,29 +37,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
 			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
 </script>
 <script type="text/javascript">
 	$(document).ready(function() {
-			/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
-			};
-			*/
-	$().UItoTop({ easingType: 'easeOutQuart' });
-});
+		$().UItoTop({ easingType: 'easeOutQuart' });
+	});
 </script>
 <!--animate-->
 <link href="/static/css/animate.css" rel="stylesheet" type="text/css" media="all">
 <script src="/static/js/wow.min.js"></script>
-	<script>
-		 new WOW().init();
-	</script>
+<script>new WOW().init();</script>
+<!--slide-->
+<link href="/static/css/style.css" rel='stylesheet' type='text/css'/>
+<!--slide-->	
 <!--//end-animate-->
 
 </head>
@@ -91,8 +83,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
-		<div class="col-md-8">
-			
+		<div class="col-md-8">>
+			<div id="Slide1" class="zy-Slide wow fadeInLeft animated" data-wow-delay=".5s">
+				<ul>
+					<li><img src="/static/images/1.jpg" /></li>
+					<li><img src="/static/images/2.jpg" /></li>
+					<li><img src="/static/images/3.jpg" /></li>
+					<li><img src="/static/images/4.jpg" /></li>
+					<li><img src="/static/images/5.jpg" /></li>
+				</ul>
+			</div>
 		</div>
 		<div class="col-md-4 banner-info">
 			<div class="logo wow fadeInRight animated" data-wow-delay=".5s">
@@ -117,7 +117,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</p>	
 			</div>
 			<div class="col-md-6 about-left wow fadeInRight animated" data-wow-delay=".5s">
-				<img src="/static/images/1.jpg" alt="" class="img-responsive">
+				<img src="/static/images/com.jpg" alt="" class="img-responsive">
 			</div>
 			<div class="clearfix"></div>
 			<div class="what wow fadeInDown animated" data-wow-duration="800ms" data-wow-delay="500ms">
@@ -377,7 +377,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="news-1-bottom">
 				<div class="col-md-6 news-1-left wow fadeInLeft animated" data-wow-delay=".5s">
 					<div class="im-left">
-						<img src="/static/images/4.jpg" alt="" class="img-responsive">
+						<img src="/static/images/new1.jpg" alt="" class="img-responsive">
 					</div>
 					<div class="tex-right">
 					<h4><a href="#">11家银行领罚单</a></h4>
@@ -394,7 +394,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col-md-6 news-1-left wow fadeInRight animated" data-wow-delay=".5s">
 					<div class="im-left">
-						<img src="/static/images/5.jpg" alt="" class="img-responsive">
+						<img src="/static/images/new2.jpg" alt="" class="img-responsive">
 					</div>
 					<div class="tex-right">
 					<h4><a href="#">英国住房抵押贷款大幅增加</a></h4>
@@ -543,4 +543,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</a>
 <!--- footer -->	
 </body>
+<script src="/static/js/jquery.zySlide.js"></script>
+<script src="/static/js/index.js"></script>
 </html>

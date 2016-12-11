@@ -120,6 +120,34 @@ font-size:1.1em;
 }
 /*-- /Link Effect: bottom border enlarge --*/
 /*--navigation--*/
+/*slide*/
+.zy-Slide{
+  font-size: 12px;
+  position:relative;
+  margin: 12em 0 0;
+  float: left;
+  width: 32%;
+  text-align: left;
+}
+.zy-Slide li{
+    position:absolute;
+    list-style:none;
+    background:rgba(0,0,0,0);
+    width:0;
+    height:0;
+    top:146px;
+    z-index:0;
+    cursor:pointer;
+    border-radius:10px;
+    margin:0;
+    padding:0;
+}
+.zy-Slide li img{
+    width:130px;
+    height:238px;
+    vertical-align:middle;
+}
+/*slide*/
 /*--banner--*/
 .banner{
 background: url(../images/banner-1.jpg) no-repeat 0px 0px;
@@ -335,7 +363,7 @@ span.glyphicon.glyphicon-star,span.glyphicon-map-marker,span.glyphicon-shopping-
 }
 .service h3{
   margin-top: 1em;
-  color: #2b90d9;
+  color: #fff;
 }
 .bg1{
   border: none;
