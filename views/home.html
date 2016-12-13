@@ -17,13 +17,13 @@
 	} 
 </script>
 <link href="/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="/static/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
 
 <!--<link href='//fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 -->
 <script src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/ser_menu.js"></script>
 <script src="/static/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/static/js/move-top.js"></script>
 <script type="text/javascript" src="/static/js/easing.js"></script>
@@ -77,10 +77,13 @@
 				</div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
-		<div class="col-md-8 wow fadeInLeft animated" data-wow-delay=".5s">
-			<div class="slide">
-				test
-			</div>
+		<div class="slide col-md-8 wow fadeInLeft animated" data-wow-delay=".5s">
+			<ul class="ser_menu" id="ser_menu" data-menu="服务项目">
+				<li><a href="#service" class="menu4 scroll">短期贷款</a></li>
+				<li><a href="#service" class="menu1 scroll">企业融资</a></li>
+				<li><a href="#service" class="menu2 scroll">信用贷款</a></li>
+				<li><a href="#service" class="menu3 scroll">抵押贷款</a></li>
+			</ul>
 		</div>
 		<div class="col-md-4 banner-info">
 			<div class="logo wow fadeInRight animated" data-wow-delay=".5s">
@@ -523,7 +526,7 @@
 			</p>
 		</div>
 	</div>
-	<a href="#"  id="toTop" style="display: block;">
+	<a href="#" id="toTop" style="display: block;">
 		<span id="toTopHover" style="opacity: 0;">
 		</span> 
 		<span id="toTopHover" style="opacity: 0;">
