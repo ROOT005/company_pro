@@ -6,11 +6,10 @@
             delay: 3000
         }, options)
         this.states = [
-            { '&zIndex': 3, width: 98, height: 180, top: 30, left: 150, $opacity: 0.9 },
-            { '&zIndex': 4, width: 130, height: 238, top: 0, left: 262, $opacity: 1 },
-            { '&zIndex': 3, width: 100, height: 183, top: 30, left: 374, $opacity: 0.9 },
-            { '&zIndex': 2, width: 98, height: 180, top: 60, left: 486, $opacity: 0.8},
-            { '&zIndex': 1, width: 120, height: 150, top: 71, left: 496, $opacity: 0.0}
+            { '&zIndex': 3, width: 98, height: 180, top: 71, left: 130, $opacity:  1 },
+            { '&zIndex': 3, width: 130, height: 238, top: 71, left: 262, $opacity: 1 },
+            { '&zIndex': 3, width: 100, height: 183, top: 71, left: 394, $opacity: 1 },
+            { '&zIndex': 3, width: 98, height: 180, top: 71, left: 526, $opacity: 1},
         ]
         this.lis = this.$ele.find('li')
         this.interval
@@ -20,13 +19,7 @@
             this.play()
         }.bind(this))
         // 点击切换到上一张
-        this.$ele.find('section:nth-child(1)').on('click', function () {
-            this.stop()
-            this.prev()
-            this.play()
-        }.bind(this))
         this.move()
-        // 让轮播图开始自动播放
         this.play()
     }
 
