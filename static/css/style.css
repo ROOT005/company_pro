@@ -120,7 +120,7 @@ label{
 }
 .navbar-default {
   border: none;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
 }
 .navbar-collapse {
   padding-right: 0;
@@ -244,7 +244,7 @@ font-size:1.1em;
   text-decoration:none;
   border: 5px solid #2b90d9;
   background-color:rgba(0,0,0,0.7);
-  font-size:0.8em;
+  font-size:1.2em;
   transition: background-color 1s;
   font-weight: bold;
 }
