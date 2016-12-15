@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"company_pro/models"
 	"github.com/astaxie/beego"
 )
 
@@ -13,10 +14,14 @@ func (c *SubmitController) Get() {
 	return
 }
 func (c *SubmitController) Post() {
-	/*name := c.Input().Get("name")
+	name := c.Input().Get("name")
 	account := c.Input().Get("account")
 	phone := c.Input().Get("phonenum")
-	varify := c.Input().Get("verify")
-	c.Redirect("/", 302)*/
+	//varify := c.Input().Get("verify")
+	err := models.AddUser(name, account, phone)
+	if err != nil {
+		beego.Error(err)
+	}
+	c.Redirect("/", 302)
 	return
 }
