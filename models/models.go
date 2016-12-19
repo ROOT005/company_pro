@@ -21,7 +21,7 @@ func RegisterDB() {
 	//注册驱动
 	orm.RegisterDriver("mysql", orm.DRMySQL)
 	//注册数据库
-	orm.RegisterDataBase("default", "mysql", "root:special005@/user?charset=utf8", 10)
+	orm.RegisterDataBase("default", "mysql", "root:special005@/user?charset=utf8&loc=Local", 10)
 }
 
 //获取所有客户资料
