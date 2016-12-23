@@ -11,7 +11,7 @@ type User struct {
 	Name     string
 	Account  string
 	PhoneNum string
-	Created  time.Time `orm:"index"`
+	Created  string `orm:"index"`
 }
 
 //注册数据库
@@ -31,7 +31,7 @@ func AddUser(name, account, phonenum string) error {
 		Name:     name,
 		Account:  account,
 		PhoneNum: phonenum,
-		Created:  time.Now(),
+		Created:  time.Now().Format("2006-01-02 15:04:05"),
 	}
 	_, err := o.Insert(user)
 	if err != nil {

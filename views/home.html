@@ -4,26 +4,8 @@
 <title>中投天成金融服务外包金融服务外包有限公司</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="成都贷款公司,成都抵押贷款,成都信用贷款,成都贷款,成都融资，企业融资，贷款,个人贷款,小额贷款,贷款公司,银行贷款,贷款网" />
-<script type="applijewelleryion/x-javascript">
-	addEventListener("load", 
-		function() { 
-			setTimeout(hideURLbar, 0); 
-		}, 
-		false
-	); 
-	function hideURLbar(){ 
-		window.scrollTo(0,1); 
-	} 
-</script>
-<link href="/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
- <link rel="shortcut icon" href="/static/images/icons/shortcut.png">
-<!-- Custom Theme files -->
-
-<!--<link href='//fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
--->
-<script src="/static/js/jquery.min.js"></script>
+<meta name="keywords" content="成都贷款公司,成都抵押贷款,成都信用贷款,成都贷款,成都融资，企业融资" />
+<script src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/ser_menu.js"></script>
 <script src="/static/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/static/js/move-top.js"></script>
@@ -36,12 +18,15 @@
 		});
 	});
 </script>
-<script type="text/javascript">
-	$(document).ready(function() {
+<!--<script type="text/javascript">
+	jQuery(document).ready(function() {
 		$().UItoTop({ easingType: 'easeOutQuart' });
-	});
+	});-->
 </script>
+<script src="/static/js/form_verify.js"></script>
 <!--animate-->
+<link href="/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link rel="shortcut icon" href="/static/images/icons/shortcut.png">
 <link href="/static/css/animate.css" rel="stylesheet" type="text/css" media="all">
 <script src="/static/js/wow.min.js"></script>
 <script>new WOW().init();</script>
@@ -57,7 +42,7 @@
 <div class="banner">
 	<div class="container">
 		<div class="navigation wow fadeInLeft animated" data-wow-delay=".5s">
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<nav class="navbar navbar-default" role="navigation">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
@@ -448,8 +433,9 @@
 					    </div>
 					  </div>
 					  <div class="form-group">
-					    <div class="col-md-10 col-lg-offset-2">
-					      <input class="form-control" type="text" id="formGroupInputSmall" name="verify" placeholder="验证码">
+					  	<label class="cap_id col-md-1 control-label" for="formGroupInputSmall">{{create_captcha}}</label>
+					    <div class="col-md-10 col-md-offset-1">
+					      <input class="verify form-control" type="text" id="formGroupInputSmall" name="captcha" placeholder="请输入验证码">
 					    </div>
 					  </div>
 		              	<div class="form-group">

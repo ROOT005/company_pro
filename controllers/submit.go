@@ -2,7 +2,9 @@ package controllers
 
 import (
 	"company_pro/models"
+	//"fmt"
 	"github.com/astaxie/beego"
+	//"strconv"
 )
 
 type SubmitController struct {
@@ -14,10 +16,11 @@ func (c *SubmitController) Get() {
 	return
 }
 func (c *SubmitController) Post() {
+	//id, value := c.GetString("captcha_id"), c.GetString("captcha")
+	//b := captcha.Verify(id, value) //验证码校验
 	name := c.Input().Get("name")
 	account := c.Input().Get("account")
 	phone := c.Input().Get("phonenum")
-	//varify := c.Input().Get("verify")
 	err := models.AddUser(name, account, phone)
 	if err != nil {
 		beego.Error(err)
