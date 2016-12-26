@@ -12,5 +12,6 @@ func init() {
 	//设置路由
 	beego.Router("/", &controllers.HomeController{})
 	beego.Router("/submit", &controllers.SubmitController{})
+	beego.Router("/submit/phonenum", &controllers.SubmitController{}, "get:PhoneNum")
 	beego.Router("/verify", &controllers.VerifyController{})
 }

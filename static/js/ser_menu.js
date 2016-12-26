@@ -8,7 +8,7 @@ function tab(){
     var index = 0;
     var timer = null;
     var lis = $('ser_menu').getElementsByTagName("li");
-    for(var i = 0; i < lis.length; i++){
+    for(var i = 0; i < 4; i++){
         lis[i].id = i;
         lis[i].onmouseover = function(){
             clearInterval(timer);
@@ -27,14 +27,14 @@ function tab(){
 
     function autoPlay(){
         index++;
-        if(index>=lis.length){
+        if(index>=4){
             index=0;
         }
         changeOption(index);
     }
 
     function changeOption(curindex){
-        for(var j = 0; j < lis.length; j++){
+        for(var j = 0; j < 4; j++){
             lis[j].className = "";
             lis[j].firstChild.style.backgroundColor = "rgba(0,0,0,0.8)";
         }

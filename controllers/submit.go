@@ -4,6 +4,7 @@ import (
 	"company_pro/models"
 	//"fmt"
 	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/validation"
 	//"strconv"
 )
 
@@ -16,8 +17,6 @@ func (c *SubmitController) Get() {
 	return
 }
 func (c *SubmitController) Post() {
-	//id, value := c.GetString("captcha_id"), c.GetString("captcha")
-	//b := captcha.Verify(id, value) //验证码校验
 	name := c.Input().Get("name")
 	account := c.Input().Get("account")
 	phone := c.Input().Get("phonenum")
@@ -27,4 +26,13 @@ func (c *SubmitController) Post() {
 	}
 	c.Redirect("/", 302)
 	return
+}
+func (c *SubmitController) PhoneNum() {
+	phonenum := c.Input().Get("phonenum")
+	valid := validation.Validation{}
+	if valid.Phone(phonenum, "Mobile").Ok && valid.Required(phonenum, "Mobile").Ok {
+		c.Ctx.WriteString("true")
+	} else {
+		c.Ctx.WriteString("false")
+	}
 }

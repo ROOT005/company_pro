@@ -7,9 +7,9 @@ html, body{
 /*ser_menu*/
 .ser_menu{
   position:relative;
-  left: 30px;
-  top: 260px;
-  line-height:100px;
+  left: 2em;
+  top: 16.25em;
+  line-height:6.25em;
   list-style-type:none;
   margin:0;
   padding:0;
@@ -29,8 +29,8 @@ html, body{
 }
 .ser_menu:after{
   color: #fff;
-  background-color: #2b90d9;
   content:attr(data-menu);
+  font-size: 1.2em;
   z-index:1;
   border-radius:50%;
   -webkit-border-radius:50%;
@@ -38,8 +38,8 @@ html, body{
 .ser_menu a{
   z-index: 2;
   color: #fff;
-  width:100px;
-  eight:100px;
+  width:6.25em;
+  eight:6.25em;
   display:inline-block;
   border-radius:50%;
   -webkit-border-radius:50%;
@@ -51,32 +51,27 @@ html, body{
   font-weight: bold;
 }
 .menu1{
-  transform: translate(100px, 0px);
+  transform: translate(6.25em, 0px);
   transition: transform 1s;
-}
-.menu1:hover{
-  background-color: #2b90d9;
 }
 .menu2{
   transition: transform 1s;
-  transform: translate(0px, -100px);
-}
-.menu2:hover{
-
+  transform: translate(0px, -6.25em);
 }
 .menu3{
   transition: transform 1s;
-  transform: translate(-100px, 0px);
-}
-.menu3:hover{
-  
+  transform: translate(-6.25em, 0px);
 }
 .menu4{
   transition: transform 1s;
-  transform: translate(0px, 100px);
+  transform: translate(0px, 6.25em);
 }
-.menu4:hover{
- 
+.menu5{
+  transition: transform 1s;
+  transform: translate(20em, 0px);
+}
+.menu5:hover{
+  background-color: #2b90d9;
 }
 /*ser_menu*/
 body a,.grid_1,plan_1,plan_1.one,plan_1.two,i.icon1, i.icon2, i.icon3, i.icon4, i.icon5, i.icon6 {
@@ -144,8 +139,9 @@ label{
     margin: 0px;
 }
 .nav > li > a {
-text-align:center;
-font-size:1.1em;
+  text-align:center;
+  font-size:1.2em;
+  font-weight: bold;
   position: relative;
   padding: 30px 16px !important;
   letter-spacing: 1px;
@@ -161,6 +157,13 @@ font-size:1.1em;
     color: #2b90d9;
     display: inline-block;
     text-decoration: none;
+}
+p.eng{
+  font-size: 1em;
+  text-decoration: underline;
+}
+.logo p{
+  font-weight: bold;
 }
 .navbar-right {
     float: left !important;
@@ -196,7 +199,7 @@ font-size:1.1em;
 /*-- /Link Effect: bottom border enlarge --*/
 /*--navigation--*/
 /*slide*/
-.slide{
+.slide1{
   margin: 1em 0 0;
   float: left;
   width: 32%;
@@ -294,10 +297,6 @@ min-height: 730px;
   color: #fff;
   margin: 0.5em 0;
   line-height: 1.2em;
-}
-p.eng{
-  font-size: 1em;
-  text-decoration: underline;
 }
 /*--about--*/
 .about {
@@ -631,16 +630,48 @@ ul.list-group.list-group-flush{
     font-size: 1.2em;
     text-align: right;
 }
+
 /*--news--*/
+#news h3{
+  margin: 1.5em 0em;
+}
+.item h4{
+  color: #fff;
+}
+.item li{
+  text-align: right;
+  list-style: none;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.carousel{
+    height: 100%;
+}
+.carousel .item{
+    height: 100%;
+    background:linear-gradient(to bottom right, red, blue);
+}
+.carousel img{
+    width: 100%;
+}
+.carousel-caption p{
+    color: #fff;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    line-height: 1.8;
+    text-align: left;
+    text-indent: 2em;
+}
 .news {
-    background: url(../images/signwords.jpg) no-repeat 0px 0px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    -moz-background-size: cover;
-    min-height: 300px;
+  background: url(../images/signwords.jpg) no-repeat 0px 0px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  min-height: 300px;
 	padding:5em 0;
+  letter-spacing: 1em;
 }
 .news h3 {
   font-size: 2em;
@@ -923,15 +954,15 @@ i.glyphicon.glyphicon-calendar {
 /*-- responsive-design --*/
 @media (max-width: 1024px){
 .view {
-    width: 336px;
+  width: 336px;
 	height: 204px;
 }
 .view .mask, .view .content {
-    width:336px;
-    height: 204px;
+  width:336px;
+  height: 204px;
 }
 .banner-info {
-    width: 40%;
+  width: 40%;
 }
 .banner {
     min-height: 570px;
