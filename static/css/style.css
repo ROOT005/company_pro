@@ -74,7 +74,7 @@ html, body{
   background-color: #2b90d9;
 }
 /*ser_menu*/
-body a,.grid_1,plan_1,plan_1.one,plan_1.two,i.icon1, i.icon2, i.icon3, i.icon4, i.icon5, i.icon6 {
+body a {
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -120,6 +120,9 @@ label{
 .navbar-collapse {
   padding-right: 0;
   padding-left: 0;  
+  }
+  .nav a{
+    outline-style: none;
   }
 .navbar-default .navbar-nav > li > a {
     color: #ffffff;
@@ -322,6 +325,7 @@ min-height: 730px;
     line-height: 1.8em;
 }
 .about a {
+    outline: none;
     text-decoration: none;
     padding: 6px 6px;
     font-size: 16px;
@@ -528,16 +532,6 @@ ul.list-group.list-group-flush{
 }
 /*service_end*?
 /*--work--*/
-.work {
-    padding: 5em 0 0;
-    text-align: center;
-}
-.work-left {
-    padding: 0;
-}
-.work-btm {
-    margin-top: 3em;
-}
 /*--work--*/
 /*--services--*/
 .services {
@@ -596,40 +590,6 @@ ul.list-group.list-group-flush{
     padding: 6px 30px;
     font-size: 16px;
 }
-/*--ser-banner--*/
-.testimonials {
-    background: url(../images/tes-banner.jpg) no-repeat 0px 0px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    -moz-background-size: cover;
-    min-height: 550px;
-    text-align: center;
-    padding: 6em 0 0;
-}
-.testimonials h3 {
-    color: #fff;
-    font-size: 2em;
-    font-weight: 500;
-}
-.testimonials h5 {
-    font-size: 1.4em;
-    color: #fff;
-    margin: 1em 0;
-}
-.testimonials p {
-    font-size: 16px;
-    color: #fff;
-    line-height: 1.8em;
-    margin: 2em 0 1em;
-    font-style: italic;
-}
-.testimonials h6 {
-    color:#D57D39;
-    font-size: 1.2em;
-    text-align: right;
-}
 
 /*--news--*/
 #news h3{
@@ -649,18 +609,19 @@ ul.list-group.list-group-flush{
 }
 .carousel .item{
     height: 100%;
-    background:linear-gradient(to bottom right, red, blue);
+    background:#fff;
 }
 .carousel img{
     width: 100%;
 }
-.carousel-caption p{
-    color: #fff;
-    margin-bottom: 1.5em;
-    font-size: 1em;
-    line-height: 1.8;
-    text-align: left;
-    text-indent: 2em;
+.carousel-caption a{
+  outline: none;
+  color: #fff;
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  line-height: 1.8;
+  text-align: left;
+  text-indent: 2em;
 }
 .news {
   background: url(../images/signwords.jpg) no-repeat 0px 0px;
@@ -681,23 +642,11 @@ ul.list-group.list-group-flush{
   min-height: 50px;
 }
 /*--news--*/
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 ul.social-icons1 li {
     display: inline-block;
     margin: 0 5px;
 }
 /*--news-1--*/
-.news-1 {
-    padding: 3em 0;
-    text-align: center;
-}
 .im-left {
     padding-left: 2.5em;
     float: left;
@@ -790,10 +739,8 @@ i.glyphicon.glyphicon-calendar {
 }
 .contact-left h4{
   text-align: center;
-  margin-top: 1em;
-}
-.contact-left h4{
   display: block;
+  margin-top: 1em;
 }
 .contact-top {
     text-align: left;
@@ -926,7 +873,7 @@ i.glyphicon.glyphicon-calendar {
 /*-- responsive-design --*/
 @media (max-width: 1366px){
 .view {
-    width: 450px;
+  width: 450px;
 	height: 274px;
 }
 .view .mask, .view .content {
@@ -970,6 +917,9 @@ i.glyphicon.glyphicon-calendar {
 .services-right {
     padding: 1.94em 1.5em;
 }
+.contact-left h4{
+  margin-bottom: 1em;
+}
 .contact-right {
     padding: 0 2em;
 }
@@ -992,6 +942,10 @@ i.glyphicon.glyphicon-calendar {
 }
 .banner-info {
     margin: 6em 0 0;
+}
+.contact-left input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
 }
 }
 /*-- responsive-design --*/
@@ -1048,6 +1002,9 @@ span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.
 .ui-1-grd1 {
     float: left;
     width: 50%;
+}
+.ui-1-right h4{
+  margin-right: -1.8em;
 }
 .three-steps {
     padding: 3em 0;
@@ -1149,12 +1106,6 @@ span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.
 .tex-right {
     width: 69%;
     padding: 4em 2em;
-}
-.im-left {
-    width: 31%;
-}
-.news-1-left {
-    /*margin-bottom: 2em;*/
 }
 .contact {
     padding: 3em 0;
@@ -1326,6 +1277,9 @@ span.glyphicon.glyphicon-heart, span.glyphicon.glyphicon-star, span.glyphicon.gl
 }
 /*-- responsive-design --*/
 @media (max-width: 640px){
+.banner-info {
+    width: 100%;
+}
 .three label {
     width: 132px;
     left: 132px;
@@ -1575,7 +1529,9 @@ span.glyphicon.glyphicon-heart, span.glyphicon.glyphicon-star, span.glyphicon.gl
 .ui-1-top {
     padding: 1.2em 0;
 }
-
+.ui-1-right h4{
+  margin-right: -0.5em;
+}
 span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.glyphicon.glyphicon-phone, span.glyphicon.glyphicon-edit {
     font-size: 1.3em;
 }
@@ -1683,7 +1639,7 @@ span.glyphicon.glyphicon-folder-open, span.glyphicon.glyphicon-star-empty, span.
     padding: 0;
 }
 .contact-left textarea {
-    height: 8.7em;
+  height: 8.7em;
 	padding: 10px 10px;
 }
 .contact-right {

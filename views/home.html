@@ -14,7 +14,7 @@
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
 			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},600);
 		});
 	});
 </script>
@@ -350,10 +350,10 @@
 	</div>
 	<!--signwords-->
 	<div class="container" id="news">
-		<h3 class="animated wow fadeInLeft animated" data-wow-duration="800ms" data-wow-delay="500ms">行业动态</h3>
-		<div  id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<h3 class="animated wow fadeInRight" data-wow-duration="800ms" data-wow-delay="500ms">行业动态</h3>
+		<div  id="carousel-example-generic" class="animated wow fadeInLeft carousel slide" data-ride="carousel">
 		    <!-- 下边的点 -->
-		    <ol class="carousel-indicators">
+		    <ol class="carousel-indicators ">
 		        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 		        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 		        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
@@ -361,53 +361,49 @@
 		    <!-- 内容 -->
 		    <div class="carousel-inner" role="listbox">
 		        <div class="item active">
-		            <img src="/static/images/img1.jpg" alt="Firefox">
+		            <img class="img-responsive " src="/static/images/img1.jpg" alt="啊呀">
 		            <div class="carousel-caption">
 		                <h4>万福生科：转让4100万元债权 预增收益820万</h4>
 		                <br>
-		                 <ul><li>
+		                 <ul class="hidden-xs"><li>
 		                	2016年12月26日16:30 证券时报网 
 		                </li></ul>
-		                <p>
-		                	万福生科(38.030, 0.42, 1.12%)(300268)12月26日晚间公告，公司与非关联方自然人曹昀签订债权转让协议，作价4100万元，将公司对刘开森享有的4100万元债权转让予曹昀，并冲回公司此前计提的坏账准备，将增加公司本年度收益820万元。万福生科2015年度亏损9944.32万元，2016年度前三季亏损814.8万元。
+		                <p class="hidden-xs">
+		                	<a href="http://finance.sina.com.cn/stock/t/2016-12-26/doc-ifxyxqsk6762904.shtml" target="_blank">
+	                        	万福生科(38.030, 0.42, 1.12%)(300268)12月26日晚间公告，公司与非关联方自然人曹昀签订债权转让协议，作价4100万元，将公司对刘开森享有的4100万元债权转让予曹昀，并冲回公司此前计提的坏账准备，将增加公司本年度收益820万元。万福生科2015年度亏损9944.32万元，2016年度前三季亏损814.8万元。
+	                        </a>	
 		                </p>
-	                    <a class="btn btn-xs btn-primary" href="http://finance.sina.com.cn/stock/t/2016-12-26/doc-ifxyxqsk6762904.shtml"
-	                        target="_blank">
-	                        更多
-	                    </a>
 		            </div>
 		        </div>
 		        <div class="item">
-		            <img src="/static/images/img2.jpg" alt="Chrome">
+		            <img class="img-responsive" src="/static/images/img2.jpg" alt="Chrome">
 		            <div class="carousel-caption">
 		                <h4>中国华融拟回A股募资超190亿 距离香港IPO仅一年</h4>
 		                <br>
-		                <ul><li>
+		                <ul class="hidden-xs"><li>
 		                	2016年12月26日03:10 中国新闻网
 		                </li></ul>
-		                <p>
-		                   新京报讯 （记者金彧）在香港上市一年多的国内最大的资管公司中国华融将回归A股。12月23日，中国华融资产管理股份有限公司在证监会网站公布了招股书，根据招股书，中国华融拟发行不超过68.95亿股，发行价不低于发行前每股净资产2.77元，照此计算，预计至少募集资金190亿元。
+		                <p class="hidden-xs">
+		                	<a href="http://finance.sina.com.cn/roll/2016-12-26/doc-ifxyxvcr7573213.shtml" target="_blank">
+		                		新京报讯 （记者金彧）在香港上市一年多的国内最大的资管公司中国华融将回归A股。12月23日，中国华融资产管理股份有限公司在证监会网站公布了招股书，根据招股书，中国华融拟发行不超过68.95亿股，发行价不低于发行前每股净资产2.77元，照此计算，预计至少募集资金190亿元。
+		                	</a>
 		                </p>
-		                <a class="btn btn-xs btn-primary" href="http://finance.sina.com.cn/roll/2016-12-26/doc-ifxyxvcr7573213.shtml"target="_blank"role="button">
-		                        更多
-		                </a>
 		            </div>
 		        </div>
 		        <div class="item">
-		            <img src="/static/images/img3.jpg" alt="Opera">
+		            <img class="img-responsive" src="/static/images/img3.jpg" alt="Opera">
 		            <div class="carousel-caption">
-		                <h4>两部门联合推动PPP项目资产证券化 优先选取行业龙头</h4>
+		                <h4>两部门联合推动PPP项目资产证券化 优选行业龙头</h4>
 		                <br>
-		                <ul><li>
+		                <ul class="hidden-xs"><li>
 		                	2016年12月26日16:21 发改委网站 
 		                </li></ul>
-		                <p>
-		                	近日，为贯彻落实《中共中央 国务院关于深化投融资体制改革的意见》（中发〔2016〕18号）、《国务院关于创新重点领域投融资机制鼓励社会投资的指导意见》（国发〔2014〕60号）等文件精神，推动政府和社会资本合作（PPP）项目资产证券化融资，国家发展改革委、中国证监会联合印发了《关于推进传统基础设施领域政府和社会资本合作（PPP）项目资产证券化相关工作的通知》
+		                <p class="hidden-xs">
+		                	<a href="http://finance.sina.com.cn/china/gncj/2016-12-26/doc-ifxyxusa5486248.shtml"
+	                        target="_blank">
+		                	近日，为贯彻落实《中共中央 国务院关于深化投融资体制改革的意见》等文件精神，推动政府和社会资本合作（PPP）项目资产证券化融资，国家发展改革委、中国证监会联合印发了《关于推进传统基础设施领域政府和社会资本合作（PPP）项目资产证券化相关工作的通知》
+		                	</a>
 		                </p>
-	                    <a class="btn btn-xs btn-primary" href="http://finance.sina.com.cn/china/gncj/2016-12-26/doc-ifxyxusa5486248.shtml"
-	                        target="_blank"role="button">
-	                        更多
-	                    </a>
 		            </div>
 		        </div>
 		    </div>
@@ -422,52 +418,7 @@
 		    </a>
 		</div>
 	</div>
-	<!--- news-1>
-	<div class="news-1" id="news">
-		<div class="container">
-			<h3 class="animated wow fadeInLeft animated" data-wow-duration="800ms" data-wow-delay="500ms">行业动态</h3>
-			<div class="news-1-bottom">
-				<div class="col-md-6 news-1-left wow fadeInLeft animated" data-wow-delay=".5s">
-					<div class="im-left col-md-4">
-						<img src="/static/images/new1.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="tex-right col-md-8">
-					<h4><a href="#">11家银行领罚单</a></h4>
-					<p style="text-indent: 2em;">
-						上周，银监会浙江监管局和上海监管局公示了新一批行政处罚信息，11家银行赫然在列，
-						受罚原因多为贷款业务出现不合规操作，包括向不符合条件的借款人发放贷款，部分贷款资金流入证券资金账户，
-						贷款发放不审慎以及贷款资金回流等。
-					</p>
-					<ul>
-						<li><i class="glyphicon glyphicon-calendar"> </i>2016-12-5&nbsp10:57</li>
-					</ul>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="col-md-6 news-1-left wow fadeInRight animated" data-wow-delay=".5s">
-					<div class="im-left">
-						<img src="/static/images/new2.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="tex-right">
-					<h4><a href="#">英国住房抵押贷款大幅增加</a></h4>
-					<p style="text-indent: 2em">
-						尽管英国央行对住房抵押贷款的限制，英国住房抵押贷款仍然创下纪录水平。
-						英国一项研究显示，商业银行对购房者发放的住房抵押贷款平均为借贷者收入的4.1倍。
-						英国央行认为，许多银行以低于监管者规定的4.5%的低利率水平大量发放住房抵押贷款。
-					</p>
-					<ul>
-						<li><i class="glyphicon glyphicon-calendar"> </i>2016-12-5&nbsp10:57</li>
-					</ul>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="clearfix"></div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-   	<!--- news-1 -->
-	<!--- contact -->
+	<!--contact-->
 	<div class="contact" id="contact">
 		<div class="container">
 			<h3 class="animated wow fadeInDown animated" data-wow-duration="800ms" data-wow-delay="500ms">联系我们</h3>
@@ -481,7 +432,7 @@
 				<div class="col-md-8 contact-left wow fadeInLeft animated" data-wow-delay=".5s">
 					<div class="row">
 						<div class="col-md-2">
-							<span class="glyphicon glyphicon-shopping-cart">
+							<span class="glyphicon glyphicon-shopping-cart visible-lg-block">
 							</span>
 						</div>
 						<div class="col-md-10 col-md-pull-2">
@@ -510,7 +461,7 @@
 					  <div class="form-group">
 					  	<label class="cap_id col-md-1 control-label" for="formGroupInputSmall">{{create_captcha}}</label>
 					    <div class="col-md-10 col-md-offset-1">
-					      <input class="verify form-control" type="text" id="formGroupInputSmall" name="captcha" placeholder="请输入验证码">
+					      <input class="verify form-control" type="text" id="formGroupInputSmall" name="captcha" placeholder="请输入验证码 点击图片刷新">
 					    </div>
 					  </div>
 		              	<div class="form-group">
