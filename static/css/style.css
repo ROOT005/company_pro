@@ -695,7 +695,7 @@ i.glyphicon.glyphicon-calendar {
 /*--news-1--*/
 /*--contact--*/
 .contact {
-    padding: 5em 0;
+    padding: 5em 0em 0em 0em;
     text-align: center;
 }
 .contact-right span{
@@ -774,7 +774,7 @@ i.glyphicon.glyphicon-calendar {
 }
 .companion img{
   display: block;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 /* FIFTH EFFECTS */
 .fifth-effect img {
